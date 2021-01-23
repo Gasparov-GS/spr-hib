@@ -37,6 +37,5 @@ public class UserDaoImp implements UserDao {
         return (User) sessionFactory.openSession().createQuery("FROM User where car = :car")
                 .setParameter("car", car)
                 .getSingleResult();
-
     }
 }
